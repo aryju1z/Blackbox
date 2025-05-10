@@ -19,7 +19,9 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#B22222',
+                        primary: '#e12e3e',
+                        'primary-light': '#f9d2d6',
+                        'primary-dark': '#8e1b26',
                         secondary: '#FFFFFF',
                         dark: '#4A3C37'
                     },
@@ -31,6 +33,14 @@
         }
     </script>
     <link rel="stylesheet" href="styles.css" />
+    <script async src="https://www.instagram.com/embed.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if(window.instgrm) {
+                window.instgrm.Embeds.process();
+            }
+        });
+    </script>
 </head>
 <body class="font-poppins bg-secondary text-dark">
     <!-- Header -->
@@ -40,7 +50,7 @@
             <div class="h-16 flex items-center">
                 <svg width="240" height="64" viewBox="0 0 240 64" class="h-full w-auto">
                     <!-- Globe Icon -->
-                    <circle cx="32" cy="32" r="28" fill="#B22222"/>
+                    <circle cx="32" cy="32" r="28" fill="#e12e3e"/>
                     <path d="M32 12 C42 12 52 22 52 32 C52 42 42 52 32 52" stroke="white" stroke-width="3" fill="none"/>
                     <path d="M12 32 C12 22 22 12 32 12" stroke="white" stroke-width="3" fill="none"/>
                     <path d="M32 52 C22 52 12 42 12 32" stroke="white" stroke-width="3" fill="none"/>
@@ -48,8 +58,8 @@
                     <path d="M20 32 Q32 20 44 32" stroke="white" stroke-width="2" fill="none"/>
                     <path d="M28 28 L36 28 L32 24 Z" fill="white"/>
                     <!-- School Name -->
-                    <text x="72" y="35" fill="#B22222" font-family="Poppins" font-size="24" font-weight="600">Gaudenci</text>
-                    <text x="72" y="52" fill="#B22222" font-family="Poppins" font-size="16">School</text>
+                    <text x="72" y="35" fill="#e12e3e" font-family="Poppins" font-size="24" font-weight="600">Gaudenci</text>
+                    <text x="72" y="52" fill="#e12e3e" font-family="Poppins" font-size="16">School</text>
                 </svg>
             </div>
 
@@ -135,6 +145,12 @@
     <!-- About Section -->
     <section id="about" class="py-20 px-6 bg-white text-center max-w-6xl mx-auto">
         <h2 class="text-4xl font-bold mb-8">Sobre a Gaudenci School</h2>
+        <div class="max-w-2xl mx-auto mb-8">
+            <video controls class="w-full rounded-lg shadow-lg">
+                <source src="vem pra gaudenci school corrigido.mp4" type="video/mp4" />
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
         <p class="text-lg max-w-3xl mx-auto mb-12">
             A Gaudenci School é uma escola de idiomas dedicada a transformar a vida dos alunos através do aprendizado de inglês e outras línguas, com foco em resultados reais e experiências enriquecedoras.
         </p>
@@ -143,10 +159,52 @@
             <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="Viagem cultural" class="rounded-lg shadow-lg" />
             <img src="https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg" alt="Aprendizado de idiomas" class="rounded-lg shadow-lg" />
         </div>
+        <div class="mt-12"></div>
             <div class="text-center">
-                <a href="#nlc" class="inline-block bg-[#B22222] text-white font-semibold px-8 py-4 rounded-lg text-lg hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-lg">
+                <a href="#nlc" class="inline-block bg-[#e12e3e] text-white font-semibold px-8 py-4 rounded-lg text-lg hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-lg">
                     Saiba mais sobre o NLC
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="py-20 px-6 bg-[#f9d2d6] max-w-6xl mx-auto rounded-lg shadow-lg my-12">
+        <h2 class="text-4xl font-bold mb-8 text-center text-[#8e1b26]">Metodologia Gaudenci</h2>
+        <p class="text-lg text-center mb-12 max-w-4xl mx-auto text-[#8e1b26]">
+            A metodologia da Gaudenci School é baseada nos 4 Pilares da Comunicação, que garantem uma aprendizagem equilibrada e completa da língua. Esses pilares são: falar, ouvir, ler e escrever, e estão presentes em todas as aulas, tornando o processo de aprendizado mais dinâmico e eficiente.
+        </p>
+        <p class="text-center mb-12 max-w-4xl mx-auto text-[#8e1b26] italic font-semibold">
+            ✨ Como os 4 Pilares funcionam na prática?
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto text-[#8e1b26]">
+            <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col items-center">
+                <i class="fas fa-comments fa-3x mb-4 text-[#e12e3e]"></i>
+                <h3 class="text-xl font-bold mb-2">SPEAKING 🗣</h3>
+                <p class="text-center">
+                    Desde a primeira aula, os alunos são incentivados a se expressar oralmente. Isso acontece por meio de atividades guiadas, perguntas abertas, role-plays e discussões que ajudam a desenvolver fluência e confiança.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col items-center">
+                <i class="fas fa-ear-listen fa-3x mb-4 text-[#e12e3e]"></i>
+                <h3 class="text-xl font-bold mb-2">LISTENING 👂</h3>
+                <p class="text-center">
+                    A compreensão auditiva é trabalhada com áudios, diálogos, vídeos e podcasts. Além disso, os alunos são expostos a diferentes sotaques e velocidades de fala para se prepararem para situações reais.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col items-center">
+                <i class="fas fa-book fa-3x mb-4 text-[#e12e3e]"></i>
+                <h3 class="text-xl font-bold mb-2">READING 📖</h3>
+                <p class="text-center">
+                    A leitura é usada para expandir o vocabulário, melhorar a gramática e interpretar textos em diversos contextos. Trabalhamos com artigos, histórias, diálogos e materiais autênticos para que o aluno se familiarize com a estrutura da língua.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col items-center">
+                <i class="fas fa-pen fa-3x mb-4 text-[#e12e3e]"></i>
+                <h3 class="text-xl font-bold mb-2">WRITING ✍</h3>
+                <p class="text-center">
+                    A produção escrita é fundamental para consolidar o aprendizado. Os alunos escrevem textos curtos e longos, como mensagens, e-mails, redações e resumos, sempre com feedback detalhado para evolução contínua.
+                </p>
             </div>
         </div>
     </section>
@@ -222,96 +280,6 @@
                     <p class="text-gray-600">
                         Equipe de profissionais experientes e certificados, dedicados ao seu sucesso no aprendizado de inglês.
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Section -->
-    <section id="videos" class="py-20 px-6 bg-gray-50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold mb-8 text-center">Conheça Nossa Metodologia</h2>
-            <p class="text-lg text-center mb-12">Descubra como a Gaudenci School está transformando o aprendizado de inglês</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Main Feature Video -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="aspect-w-16 aspect-h-9">
-                        <iframe class="w-full h-full" 
-                                src="https://www.youtube.com/embed/VIDEO_ID_1" 
-                                title="Metodologia Gaudenci School"
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Nossa Metodologia Única</h3>
-                        <p class="text-gray-600">Aprenda como nossa abordagem personalizada acelera seu aprendizado de inglês.</p>
-                    </div>
-                </div>
-
-                <!-- Student Success Stories -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="aspect-w-16 aspect-h-9">
-                        <iframe class="w-full h-full" 
-                                src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                                title="Histórias de Sucesso"
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Histórias de Sucesso</h3>
-                        <p class="text-gray-600">Veja como nossos alunos estão alcançando seus objetivos profissionais.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Quick Video Tips -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="aspect-w-16 aspect-h-9">
-                        <iframe class="w-full h-full" 
-                                src="https://www.youtube.com/embed/VIDEO_ID_3" 
-                                title="Dicas de Inglês"
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen></iframe>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold mb-1">Dicas de Pronúncia</h4>
-                        <p class="text-sm text-gray-600">Aprenda a pronunciar corretamente palavras comuns em inglês.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="aspect-w-16 aspect-h-9">
-                        <iframe class="w-full h-full" 
-                                src="https://www.youtube.com/embed/VIDEO_ID_4" 
-                                title="Business English"
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen></iframe>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold mb-1">Business English</h4>
-                        <p class="text-sm text-gray-600">Expressões essenciais para o ambiente profissional.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="aspect-w-16 aspect-h-9">
-                        <iframe class="w-full h-full" 
-                                src="https://www.youtube.com/embed/VIDEO_ID_5" 
-                                title="Dicas de Estudo"
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen></iframe>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold mb-1">Dicas de Estudo</h4>
-                        <p class="text-sm text-gray-600">Estratégias para otimizar seu aprendizado de inglês.</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -436,7 +404,7 @@
                             Expressões do dia a dia
                         </li>
                     </ul>
-                    <a href="#" class="inline-block mt-6 text-primary font-semibold hover:underline">
+                    <a href="https://api.whatsapp.com/send?phone=+5511999999999&text=Olá,%20quero%20melhorar%20minha%20fala%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental!" class="inline-block mt-6 text-primary font-semibold hover:underline" target="_blank" rel="noopener noreferrer">
                         Praticar agora →
                     </a>
                 </div>
@@ -461,7 +429,7 @@
                             Reuniões virtuais
                         </li>
                     </ul>
-                    <a href="#" class="inline-block mt-6 text-primary font-semibold hover:underline">
+                    <a href="https://api.whatsapp.com/send?phone=+5511999999999&text=Olá,%20quero%20melhorar%20meu%20inglês%20profissional%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental!" class="inline-block mt-6 text-primary font-semibold hover:underline" target="_blank" rel="noopener noreferrer">
                         Praticar agora →
                     </a>
                 </div>
@@ -486,29 +454,9 @@
                             Phrasal verbs
                         </li>
                     </ul>
-                    <a href="#" class="inline-block mt-6 text-primary font-semibold hover:underline">
+                    <a href="https://api.whatsapp.com/send?phone=+5511999999999&text=Olá,%20quero%20melhorar%20minha%20gramática%20e%20gostaria%20de%20agendar%20uma%20aula%20experimental!" class="inline-block mt-6 text-primary font-semibold hover:underline" target="_blank" rel="noopener noreferrer">
                         Praticar agora →
                     </a>
-                </div>
-            </div>
-
-            <!-- Weekly Challenge -->
-            <div class="bg-white rounded-lg p-8 shadow-lg">
-                <div class="flex flex-col md:flex-row items-center justify-between">
-                    <div>
-                        <h3 class="text-2xl font-bold mb-4">Desafio Semanal</h3>
-                        <p class="text-gray-600 mb-4">
-                            Participe do nosso desafio semanal e pratique seu inglês de forma divertida e interativa.
-                        </p>
-                        <a href="#" class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-colors">
-                            Participar do Desafio
-                        </a>
-                    </div>
-                    <div class="mt-6 md:mt-0">
-                        <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg" 
-                             alt="Weekly Challenge" 
-                             class="w-64 h-64 object-cover rounded-lg shadow-md">
-                    </div>
                 </div>
             </div>
         </div>
@@ -554,7 +502,7 @@
                 </div>
             </div>
             <div class="text-center mt-8">
-                <a href="https://instagram.com/gaudencischool" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all">
+                <a href="https://instagram.com/gaudencischool" target="_blank" class="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary-dark text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-all">
                     <i class="fab fa-instagram text-xl"></i>
                     Seguir @gaudencischool
                 </a>
@@ -562,57 +510,41 @@
         </div>
     </section>
 
-    <!-- News Section -->
+    <!-- Testimonials Section -->
     <section id="news" class="py-20 px-6 bg-white max-w-6xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-12">Notícias e Atualizações</h2>
+        <h2 class="text-4xl font-bold mb-12">Depoimentos dos Alunos</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <article class="rounded-lg shadow-lg p-6 text-left">
-                <h3 class="text-2xl font-semibold mb-4">Novo curso de conversação</h3>
-                <p>Estamos lançando um curso de conversação para alunos que desejam praticar inglês em situações reais.</p>
-            </article>
-            <article class="rounded-lg shadow-lg p-6 text-left">
-                <h3 class="text-2xl font-semibold mb-4">Workshop gratuito em maio</h3>
-                <p>Participe do nosso workshop gratuito sobre técnicas de aprendizado acelerado.</p>
-            </article>
-            <article class="rounded-lg shadow-lg p-6 text-left">
-                <h3 class="text-2xl font-semibold mb-4">Depoimentos de alunos</h3>
-                <p>Confira os depoimentos inspiradores de alunos que transformaram suas vidas com a Gaudenci School.</p>
-            </article>
-        </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-white rounded-lg p-6 shadow-lg">
-                    <h3 class="text-xl font-bold mb-4">Stefany</h3>
-                    <p class="italic mb-4">
-                        "Antes, parecia impossível conciliar minha rotina de trabalho e estudos. Hoje, com o Planner, consigo estudar 4 idiomas simultaneamente, sem comprometer meu tempo!"
-                    </p>
-                    <a href="#pricing" class="text-primary font-semibold hover:underline">
-                        Quero transformar minha rotina também!
-                    </a>
-                </div>
+            <!-- Testimonial 1 -->
+            <div class="bg-white rounded-lg p-6 shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Stefany</h3>
+                <p class="italic mb-4">
+                    "Antes, parecia impossível conciliar minha rotina de trabalho e estudos. Hoje, com o Planner, consigo estudar 4 idiomas simultaneamente, sem comprometer meu tempo!"
+                </p>
+                <a href="#pricing" class="text-primary font-semibold hover:underline">
+                    Quero transformar minha rotina também!
+                </a>
+            </div>
 
-                <!-- Testimonial 2 -->
-                <div class="bg-white rounded-lg p-6 shadow-lg">
-                    <h3 class="text-xl font-bold mb-4">Michele</h3>
-                    <p class="italic mb-4">
-                        "Sempre tive dificuldade para organizar meus estudos, mas o Planner foi um divisor de águas. Retomei inglês, acelerei no espanhol e comecei italiano!"
-                    </p>
-                    <a href="#pricing" class="text-primary font-semibold hover:underline">
-                        Quero transformar minha rotina também!
-                    </a>
-                </div>
+            <!-- Testimonial 2 -->
+            <div class="bg-white rounded-lg p-6 shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Michele</h3>
+                <p class="italic mb-4">
+                    "Sempre tive dificuldade para organizar meus estudos, mas o Planner foi um divisor de águas. Retomei inglês, acelerei no espanhol e comecei italiano!"
+                </p>
+                <a href="#pricing" class="text-primary font-semibold hover:underline">
+                    Quero transformar minha rotina também!
+                </a>
+            </div>
 
-                <!-- Testimonial 3 -->
-                <div class="bg-white rounded-lg p-6 shadow-lg">
-                    <h3 class="text-xl font-bold mb-4">Raiane</h3>
-                    <p class="italic mb-4">
-                        "Minha rotina era uma bagunça, mas o Planner me ajudou a colocar tudo nos trilhos. Agora, estudo 3 idiomas, trabalho e faço uma segunda graduação sem estresse!"
-                    </p>
-                    <a href="#pricing" class="text-primary font-semibold hover:underline">
-                        Quero transformar minha rotina também!
-                    </a>
-                </div>
+            <!-- Testimonial 3 -->
+            <div class="bg-white rounded-lg p-6 shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Raiane</h3>
+                <p class="italic mb-4">
+                    "Minha rotina era uma bagunça, mas o Planner me ajudou a colocar tudo nos trilhos. Agora, estudo 3 idiomas, trabalho e faço uma segunda graduação sem estresse!"
+                </p>
+                <a href="#pricing" class="text-primary font-semibold hover:underline">
+                    Quero transformar minha rotina também!
+                </a>
             </div>
         </div>
     </section>
@@ -637,15 +569,15 @@
                             </p>
                             <ul class="list-none space-y-2">
                                 <li class="flex items-center">
-                                    <i class="fas fa-check text-[#B87B67] mr-2"></i>
+                                    <i class="fas fa-check text-primary mr-2"></i>
                                     Organize sua rotina de estudos
                                 </li>
                                 <li class="flex items-center">
-                                    <i class="fas fa-check text-[#B87B67] mr-2"></i>
+                                    <i class="fas fa-check text-primary mr-2"></i>
                                     Acompanhe seu progresso
                                 </li>
                                 <li class="flex items-center">
-                                    <i class="fas fa-check text-[#B87B67] mr-2"></i>
+                                    <i class="fas fa-check text-primary mr-2"></i>
                                     Alcance resultados reais
                                 </li>
                             </ul>
@@ -686,14 +618,14 @@
                 <div class="space-y-4">
                     <p class="text-lg">De <span class="line-through text-gray-600">R$991</span> por apenas</p>
                     <div class="flex items-center justify-center gap-2">
-                        <span class="text-6xl font-bold text-[#B87B67]">R$47</span>
+                        <span class="text-6xl font-bold text-primary">R$47</span>
                         <div class="text-left">
                             <span class="text-2xl">,00</span>
                             <p class="text-lg">ou 12x de R$8,64</p>
                         </div>
                     </div>
                 </div>
-                <a href="https://pay.hotmart.com/E94682239T?bid=1738203180917" class="inline-block bg-[#B87B67] text-white font-semibold px-8 py-4 rounded-lg text-lg hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-lg">
+                <a href="https://pay.hotmart.com/E94682239T?bid=1738203180917" class="inline-block bg-primary text-white font-semibold px-8 py-4 rounded-lg text-lg hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-lg">
                     quero começar agora mesmo!
                 </a>
             </div>
