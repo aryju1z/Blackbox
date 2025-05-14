@@ -1,0 +1,117 @@
+/* Updated color palette for Gaudenci School */
+:root {
+  --color-primary: #e12e3e;
+  --color-primary-light: #f9d2d6;
+  --color-primary-dark: #8e1b26;
+  --color-white: #ffffff;
+}
+
+/* Global styles */
+body {
+  color: var(--color-primary-dark);
+  background-color: var(--color-white);
+}
+
+/* Background colors */
+.bg-primary, 
+[class*="bg-[#B22222]"],
+[class*="bg-primary"] {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-primary-light,
+[class*="bg-[#f9d2d6]"] {
+  background-color: var(--color-primary-light) !important;
+}
+
+.bg-primary-dark,
+[class*="bg-[#8e1b26]"] {
+  background-color: var(--color-primary-dark) !important;
+}
+
+/* Text colors */
+.text-primary,
+[class*="text-[#e12e3e]"] {
+  color: var(--color-primary) !important;
+}
+
+.text-primary-light,
+[class*="text-[#f9d2d6]"] {
+  color: var(--color-primary-light) !important;
+}
+
+.text-primary-dark,
+[class*="text-[#8e1b26]"] {
+  color: var(--color-primary-dark) !important;
+}
+
+/* Border colors */
+.border-primary,
+[class*="border-[#e12e3e]"] {
+  border-color: var(--color-primary) !important;
+}
+
+.border-primary-light,
+[class*="border-[#f9d2d6]"] {
+  border-color: var(--color-primary-light) !important;
+}
+
+.border-primary-dark,
+[class*="border-[#8e1b26]"] {
+  border-color: var(--color-primary-dark) !important;
+}
+
+/* Button and link styles */
+.btn-primary,
+a[href].bg-primary,
+a[href].bg-[#e12e3e] {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+a[href].bg-primary:hover,
+a[href].bg-[#e12e3e]:hover {
+  background-color: var(--color-primary-dark);
+  opacity: 0.9;
+}
+
+/* Gradient backgrounds */
+[class*="from-primary"],
+[class*="from-[#e12e3e]"] {
+  --tw-gradient-from: var(--color-primary) !important;
+}
+
+[class*="to-primary"],
+[class*="to-[#e12e3e]"] {
+  --tw-gradient-to: var(--color-primary) !important;
+}
+
+/* Shadow effects with brand colors */
+.shadow-brand {
+  box-shadow: 0 4px 6px -1px rgba(225, 46, 62, 0.1), 0 2px 4px -1px rgba(225, 46, 62, 0.06);
+}
+
+/* Hover effects */
+.hover\:text-primary:hover {
+  color: var(--color-primary) !important;
+}
+
+.hover\:bg-primary:hover {
+  background-color: var(--color-primary) !important;
+}
+
+/* Custom animations */
+@keyframes pulse-primary {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-primary {
+  animation: pulse-primary 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
