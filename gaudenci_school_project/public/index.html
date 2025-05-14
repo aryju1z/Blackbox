@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gaudenci School | NLC Next Level Career</title>
+    <meta name="description" content="Gaudenci School - Escola de idiomas. Conheça o programa NLC Next Level Career para levar sua carreira ao próximo nível." />
+    <link rel="icon" type="image/png" href="Gaudenci_school_logo.png"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#e12e3e',
+                        'primary-light': '#f9d2d6',
+                        'primary-dark': '#8e1b26',
+                        secondary: '#FFFFFF',
+                        dark: '#4A3C37'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+ 
+        /* Ajuste da seção de depoimentos */
+        .testimonial-card {
+            border: none; /* Remove bordas */
+            background: none; /* Remove fundo vermelho */
+            text-align: left; /* Alinha o texto à esquerda */
+        }
+
+        .testimonial-image {
+            width: 100%; /* Garante que a imagem ocupe o espaço disponível */
+            height: auto; /* Mantém a proporção */
+            border-radius: 0; /* Remove bordas arredondadas */
+        }
+
+        .testimonial-card::before {
+            content: '“'; /* Adiciona aspas antes do texto */
+            font-size: 3rem;
+            color: #8e1b26; /* Cor das aspas */
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body class="font-poppins bg-secondary text-dark">
+    <!-- Header -->
+    <header class="flex items-center justify-between py-0 px-0 bg-white shadow-md sticky top-0 z-50">
+        <div class="flex items-center space-x-4">
+            <!-- Gaudenci School Logo -->
+            <div class="h-12 flex items-center space-x-3">
+                <img src="gaudenci_school_logo.png" alt="Gaudenci School logo featuring a stylized globe with an airplane circling it, symbolizing global learning and career advancement, in a professional and welcoming tone" class="h-full w-auto" />
+                <span class="text-2x0 font-bold text-primary select-none">Gaudenci School</span>
+            </div>
+        </div>
+<nav class="space-x-6 ml-auto hidden md:flex">
+        <a href="#home" class="text-primary font-semibold hover:underline">Home</a>
+        <a href="#about" class="text-primary font-semibold hover:underline">Sobre</a>
+        <a href="#news" class="text-primary font-semibold hover:underline">Feedbacks</a>
+        <a href="#nlc" class="text-primary font-semibold hover:underline">Next Level Career</a>
+        <a href="https://instagram.com/gaudencischool" target="_blank" class="text-primary font-semibold hover:underline">Instagram</a>
+    </nav>
+    <!-- Mobile menu button -->
+    <button id="mobile-menu-button" class="md:hidden flex items-center px-3 py-2 border rounded text-primary border-primary hover:text-primary-light hover:border-primary-light focus:outline-none" aria-label="Toggle menu">
+        <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    </button>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden absolute top-full right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50">
+        <a href="#home" class="block px-4 py-2 text-primary hover:bg-primary-light hover:text-primary-dark">Home</a>
+        <a href="#about" class="block px-4 py-2 text-primary hover:bg-primary-light hover:text-primary-dark">Sobre</a>
+        <a href="#news" class="block px-4 py-2 text-primary hover:bg-primary-light hover:text-primary-dark">Feedbacks</a>
+        <a href="#nlc" class="block px-4 py-2 text-primary hover:bg-primary-light hover:text-primary-dark">Next Level Career</a>
+        <a href="https://instagram.com/gaudencischool" target="_blank" class="block px-4 py-2 text-primary hover:bg-primary-light hover:text-primary-dark">Instagram</a>
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
+        <!-- Animated background pattern -->
+        <div class="absolute inset-0 bg-gradient-to-br from-red-50 to-white">
+            <div class="absolute inset-0" style="background-image: url('https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg'); background-size: cover; background-position: center; opacity: 0.4; animation: slowZoom 15s infinite alternate;"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to Gaudenci School</h1>
+            <p>Prepare-se para levar sua carreira e aprendizado de idiomas ao próximo nível com o Next Level Career!</p>
+            <a href="#nlc" class="btn-primary">
+                Conheça o Next Level Career
+            </a>
+        </div>
+    </section>
+
+    <!-- Theme Image Section -->
+    <section class="theme-image-section py-12 px-6">
+        <img src="Gaudenci School Tema.png" alt="Gaudenci School Theme" class="w-full max-w-6xl mx-auto rounded-lg shadow-lg">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-white max-w-6xl mx-auto rounded-lg shadow-lg my-12">
+        <h2 class="text-4xl font-bold mb-8 text-center text-[#8e1b26]">Sobre a Gaudenci School</h2>
+        <div class="max-w-2xl mx-auto mb-8">
+            <video controls class="w-64 h-112 rounded-lg shadow-lg mx-auto">
+                <source src="vem pra gaudenci school corrigido.mp4" type="video/mp4" />
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+        <p class="text-lg max-w-3xl mx-auto mb-12">
+            A Gaudenci School é uma escola de idiomas dedicada a transformar a vida dos alunos através do aprendizado de inglês e outras línguas, com foco em resultados reais e experiências enriquecedoras.
+        </p>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="py-20 px-6 bg-[#f9d2d6] max-w-6xl mx-auto rounded-lg shadow-lg my-12">
+        <h2 class="text-4xl font-bold mb-8 text-center text-[#8e1b26]">Metodologia Gaudenci</h2>
+        <p class="text-lg text-center mb-12 max-w-4xl mx-auto text-[#8e1b26]">
+            A metodologia da Gaudenci School é baseada nos 4 Pilares da Comunicação, que garantem uma aprendizagem equilibrada e completa da língua. Esses pilares são: falar, ouvir, ler e escrever, e estão presentes em todas as aulas, tornando o processo de aprendizado mais dinâmico e eficiente.
+        </p>
+        <p class="text-center mb-12 max-w-4xl mx-auto text-[#8e1b26] italic font-semibold">
+            ✨ Como os 4 Pilares funcionam na prática?
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto text-[#8e1b26]">
+            <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col items-center">
+                <i class="fas fa-comments fa-3x mb-4 text-[#e12e3e]"></i>
+                <h3 class="text-xl font-bold mb-2">SPEAKING 🗣</h3>
+                <p class="text-center">
+                    Desde a primeira aula, os alunos são incentivados a se expressar oralmente. Isso acontece por meio de atividades guiadas, perguntas abertas, role-plays e discussões que ajudam a desenvolver fluência e confiança.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col items-center">
+                <i class="fas fa-ear-listen fa-3x mb-4 text-[#e12e3e]"></i>
+                <h3 class="text-xl font-bold mb-2">LISTENING 👂</h3>
+                <p class="text-center">
+                    A compreensão auditiva é trabalhada com áudios, diálogos, vídeos e podcasts. Além disso, os alunos são expostos a diferentes sotaques e velocidades de fala para se prepararem para situações reais.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col items-center">
+                <i class="fas fa-book fa-3x mb-4 text-[#e12e3e]"></i>
+                <h3 class="text-xl font-bold mb-2">READING 📖</h3>
+                <p class="text-center">
+                    A leitura é usada para expandir o vocabulário, melhorar a gramática e interpretar textos em diversos contextos. Trabalhamos com artigos, histórias, diálogos e materiais autênticos para que o aluno se familiarize com a estrutura da língua.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col items-center">
+                <i class="fas fa-pen fa-3x mb-4 text-[#e12e3e]"></i>
+                <h3 class="text-xl font-bold mb-2">WRITING ✍</h3>
+                <p class="text-center">
+                    A produção escrita é fundamental para consolidar o aprendizado. Os alunos escrevem textos curtos e longos, como mensagens, e-mails, redações e resumos, sempre com feedback detalhado para evolução contínua.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values and Mission Section -->
+    <section id="values" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-center">Nossos Valores e Missão</h2>
+            <p class="text-lg text-center mb-12 max-w-3xl mx-auto">
+                Na Gaudenci School, acreditamos que o aprendizado de inglês vai além da sala de aula. Nossa missão é transformar vidas através da educação e preparar nossos alunos para um futuro global.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="bg-white rounded-lg p-6 shadow-lg border-t-4 border-primary">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-star text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Excelência</h3>
+                    <p class="text-gray-600">
+                        Comprometidos com os mais altos padrões de qualidade em ensino e metodologia, garantindo resultados excepcionais para nossos alunos.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="bg-white rounded-lg p-6 shadow-lg border-t-4 border-primary">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-users text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Comunidade</h3>
+                    <p class="text-gray-600">
+                        Criamos um ambiente acolhedor e colaborativo, onde cada aluno se sente parte de uma comunidade global de aprendizado.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="bg-white rounded-lg p-6 shadow-lg border-t-4 border-primary">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-rocket text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Inovação</h3>
+                    <p class="text-gray-600">
+                        Utilizamos métodos modernos e tecnologia de ponta para proporcionar uma experiência de aprendizado eficiente e envolvente.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Mission Statement -->
+            <div class="mt-16 bg-gray-50 rounded-lg p-8 text-center">
+                <h3 class="text-2xl font-bold mb-4">Nossa Missão</h3>
+                <p class="text-lg max-w-3xl mx-auto">
+                    "Capacitar nossos alunos com habilidades linguísticas e culturais que abram portas para oportunidades globais, transformando sonhos em realidade através da educação de qualidade."
+                </p>
+            </div>
+
+            <!-- Benefits -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-check-circle text-primary mr-2"></i>
+                        Metodologia Comprovada
+                    </h3>
+                    <p class="text-gray-600">
+                        Nossa abordagem única combina técnicas tradicionais com métodos modernos, garantindo um aprendizado eficaz e duradouro.
+                    </p>
+                </div>
+                            <div class="bg-white p-6 rounded-lg shadow-lg">
+                            
+
+                            <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-check-circle text-primary mr-2"></i>
+                        Professores Qualificados
+                    </h3>
+                    <p class="text-gray-600">
+                        Equipe de profissionais experientes e certificados, dedicados ao seu sucesso no aprendizado de inglês.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- NLC Program Section -->
+    <section id="nlc" class="py-20 px-6 bg-primary text-white max-w-6xl mx-auto rounded-lg shadow-lg my-12">
+        <h2 class="text-4xl font-bold mb-6 text-center">Next Level Career</h2>
+        <p class="text-lg text-center max-w-3xl mx-auto mb-16 select-text">
+            Nosso programa exclusivo de Job Interview Simulation prepara você para brilhar em entrevistas de emprego em inglês. Com simulações realistas, análise de currículo e acompanhamento personalizado, ajudamos você a se destacar no mercado global.
+        </p>
+        
+        <!-- Program Packages -->
+        <div class="space-y-12 max-w-4xl mx-auto">
+            <!-- NLC Express -->
+            <div class="bg-white rounded-lg p-6 text-black shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">NLC Express</h3>
+                <p class="mb-4">
+                    Entrevista em inglês marcada para os próximos dias? Prepare-se com o NLC Express e chegue confiante!
+                </p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Sessão intensiva de aproximadamente 1h00</li>
+                    <li>Simulação real da sua entrevista em Inglês</li>
+                    <li>Feedback na hora e correções práticas</li>
+                    <li>Certificado de participação</li>
+                    <li>Agendamento para a mesma semana (vagas limitadas!)</li>
+                </ul>
+                <p class="mb-4 font-semibold">🎯 Para quem precisa de resultado rápido e impacto imediato.</p>
+                <p class="mb-4 font-bold">Preço: R$349,00 em até 12x</p>
+                <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js" data-preference-id="2405494997-c436e58a-3450-483e-af94-b0193eccc2e4" data-source="button"></script>
+            </div>
+
+            <!-- Pacote Essencial -->
+            <div class="bg-white rounded-lg p-6 text-black shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Pacote Essencial</h3>
+                <p class="mb-4">
+                    1 simulação de entrevista de aproximadamente 1 hora gravada em inglês com feedback detalhado
+                </p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Análise e otimização do currículo em inglês</li>
+                    <li>Checklist personalizado (erros a evitar, pontos a reforçar, análise de perfil)</li>
+                    <li>Acesso ao material exclusivo com frases-chave e expressões essenciais</li>
+                    <li>Certificado de participação</li>
+                </ul>
+                <p class="mb-4 font-semibold">🎯 Ideal para quem busca um suporte pontual para se preparar para entrevistas.</p>
+                <p class="mb-4 font-bold">Preço: R$697,00 em até 12x</p>
+                <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js" data-preference-id="2405494997-d392f7e5-257b-470e-a5e4-f4c19dacf395" data-source="button"></script>
+            </div>
+
+            <!-- Pacote Avançado -->
+            <div class="bg-white rounded-lg p-6 text-black shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Pacote Avançado</h3>
+                <p class="mb-4">
+                    2 simulações de entrevistas em inglês de aproximadamente 1 hora cada ao vivo com feedback detalhado
+                </p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Gravação das entrevistas para revisão posterior</li>
+                    <li>Análise aprofundada e otimização do currículo em inglês</li>
+                    <li>Checklist personalizado + estratégias para responder com confiança</li>
+                    <li>Dicas estratégicas para networking internacional</li>
+                    <li>Acesso ao material exclusivo</li>
+                    <li>Certificado de participação</li>
+                </ul>
+                <p class="mb-4 font-semibold">🎯 Indicado para quem deseja um preparo mais completo com prática realista e ajustes personalizados.</p>
+                <p class="mb-4 font-bold">Preço: R$997,00 em até 12x</p>
+                <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js" data-preference-id="2405494997-00da8ed7-7628-4703-8e11-77cdc1999e92" data-source="button"></script>
+            </div>
+
+            <!-- Pacote VIP -->
+            <div class="bg-white rounded-lg p-6 text-black shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Pacote VIP</h3>
+                <p class="mb-4">
+                    Tudo do Pacote Avançado +
+                </p>
+                <ul class="list-disc list-inside mb-4">
+                    <li>Acompanhamento VIP pelo WhatsApp diretamente com os mentores por 1 mês</li>
+                    <li>Sessão extra de mentoria individual (aproxim. 1h) para ajustes finais antes da entrevista</li>
+                    <li>Material exclusivo com estudos de caso e melhores práticas de entrevistas internacionais</li>
+                </ul>
+                <p class="mb-4 font-semibold">🎯 Perfeito para profissionais que querem um suporte contínuo e preparação premium para processos seletivos globais.</p>
+                <p class="mb-4 font-bold">Preço: R$2.099,70 em até 12x</p>
+                <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js" data-preference-id="2405494997-79b0e63b-39c6-4f10-b6f7-645b59cf3325" data-source="button"></script>
+            </div>
+        </div>
+    </section>
+    
+    </section>
+
+    
+
+    <!-- Testimonials Section -->
+    <section id="news" class="py-20 px-6 bg-white max-w-6xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12 bg-primary text-white inline-block py-2 px-4 rounded-lg shadow-lg">
+            Depoimentos dos nossos Alunos
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card chat-bubble">
+                <img src="Krystal.jpg" alt="Krystal" class="testimonial-image" />
+                <h3 class="text-xl font-bold mb-2">Krystal</h3>
+                <p class="text-lg">"A Gaudenci School me ajudou a alcançar meus objetivos profissionais!"</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card chat-bubble">
+                <img src="Thiago.jpg" alt="Thiago" class="testimonial-image" />
+                <h3 class="text-xl font-bold mb-2">Thiago</h3>
+                <p class="text-lg">"Excelente metodologia e professores muito dedicados!"</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card chat-bubble">
+                <img src="Nathalia.jpg" alt="Nathalia" class="testimonial-image" />
+                <h3 class="text-xl font-bold mb-2">Nathalia</h3>
+                <p class="text-lg">"O programa NLC foi fundamental para minha carreira internacional!"</p>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card chat-bubble">
+                <img src="Mayara.PNG" alt="Mayara" class="testimonial-image" />
+                <h3 class="text-xl font-bold mb-2">Mayara</h3>
+                <p class="text-lg">"Aprendi muito mais do que inglês, desenvolvi habilidades profissionais!"</p>
+            </div>
+        </div>
+        <div class="mt-12 space-y-6">
+            <a href="https://api.whatsapp.com/send?phone=+5511999999999&text=Olá,%20gostaria%20de%20marcar%20uma%20aula%20experimental" class="btn-primary animate-bounce" target="_blank" rel="noopener noreferrer">
+                Quero marcar uma aula experimental GRATUITA!
+            </a>
+            <p class="text-lg mt-4 font-semibold text-primary">
+                Experimente por 7 dias! Garantia total de satisfação ou seu dinheiro de volta.
+            </p>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://api.whatsapp.com/message/BJR7VXVK5PG4L1?autoload=1&app_absent=0" 
+       class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-colors animate-pulse">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-6 bg-white max-w-6xl mx-auto rounded-lg shadow-lg my-12">
+        <h2 class="text-4xl font-bold mb-12 text-center text-primary">Perguntas Frequentes</h2>
+        <div class="space-y-6 max-w-3xl mx-auto">
+            <div class="faq-item">
+                <h3 class="flex items-center gap-2 text-xl font-semibold mb-2 cursor-pointer">
+                    <span class="faq-toggle text-2xl">+</span>
+                    Como funciona o programa Next Level Career?
+                </h3>
+                <p class="hidden text-lg">O Next Level Career é um programa exclusivo de simulação de entrevistas em inglês, com feedback detalhado e preparação personalizada para processos seletivos internacionais.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="flex items-center gap-2 text-xl font-semibold mb-2 cursor-pointer">
+                    <span class="faq-toggle text-2xl">+</span>
+                    Quanto tempo dura cada sessão?
+                </h3>
+                <p class="hidden text-lg">As sessões têm duração aproximada de 1 hora, permitindo tempo suficiente para simulação, feedback e orientações práticas.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="flex items-center gap-2 text-xl font-semibold mb-2 cursor-pointer">
+                    <span class="faq-toggle text-2xl">+</span>
+                    Como são as formas de pagamento?
+                </h3>
+                <p class="hidden text-lg">Oferecemos pagamento em até 12x nos cartões de crédito, com processamento seguro através do Mercado Pago.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="flex items-center gap-2 text-xl font-semibold mb-2 cursor-pointer">
+                    <span class="faq-toggle text-2xl">+</span>
+                    Como são as formas de pagamento?
+                </h3>
+                <p class="hidden text-lg">Oferecemos pagamento em até 12x nos cartões de crédito, com processamento seguro através do Mercado Pago.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="flex items-center gap-2 text-xl font-semibold mb-2 cursor-pointer">
+                    <span class="faq-toggle text-2xl">+</span>
+                    Como são as formas de pagamento?
+                </h3>
+                <p class="hidden text-lg">Oferecemos pagamento em até 12x nos cartões de crédito, com processamento seguro através do Mercado Pago.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-white max-w-6xl mx-auto rounded-lg shadow-lg my-12">
+        <h2 class="text-4xl font-bold mb-12 text-center text-primary">Entre em Contato</h2>
+        <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold mb-4">Informações de Contato</h3>
+                <div class="space-y-4">
+                    <p class="flex items-center">
+                        <i class="fas fa-phone mr-3 text-primary"></i>
+                        <a href="tel:+5511999999999" class="hover:text-primary">+55 (11) 99999-9999</a>
+                    </p>
+                    <p class="flex items-center">
+                        <i class="fas fa-envelope mr-3 text-primary"></i>
+                        <a href="mailto:contato@gaudencischool.com" class="hover:text-primary">contato@gaudencischool.com</a>
+                    </p>
+                    <p class="flex items-center">
+                        <i class="fab fa-instagram mr-3 text-primary"></i>
+                        <a href="https://instagram.com/gaudencischool" target="_blank" class="hover:text-primary">@gaudencischool</a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">Envie uma Mensagem</h3>
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Nome</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8 px-6 text-center">
+        <p>© 2025 Gaudenci School. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item h3');
+            faqItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const answer = item.nextElementSibling;
+                    const toggle = item.querySelector('.faq-toggle');
+                    if (answer.classList.contains('hidden')) {
+                        answer.classList.remove('hidden');
+                        if (toggle) toggle.textContent = '-';
+                    } else {
+                        answer.classList.add('hidden');
+                        if (toggle) toggle.textContent = '+';
+                    }
+                });
+            });
+        });
+    </script>
+<script src="scripts/mobile-menu.js"></script>
+</body>
+</html>

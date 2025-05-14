@@ -1,0 +1,72 @@
+/* Decorative Elements */
+.decorative-element {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0.6;
+  font-size: 100px;
+  color: var(--primary);
+  animation: float 10s infinite ease-in-out;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 5px 15px rgba(225, 46, 62, 0.3));
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(225, 46, 62, 0.2);
+}
+
+.decorative-element.plane {
+  top: 15%;
+  left: 8%;
+  animation-delay: 0s;
+}
+
+.decorative-element.graduation-cap {
+  top: 35%;
+  right: 15%;
+  animation-delay: 1.5s;
+}
+
+.decorative-element.book {
+  bottom: 25%;
+  left: 12%;
+  animation-delay: 2.5s;
+}
+
+.decorative-element.globe {
+  top: 65%;
+  right: 10%;
+  animation-delay: 3.5s;
+}
+
+.decorative-element.passport {
+  bottom: 20%;
+  right: 20%;
+  animation-delay: 4.5s;
+}
+
+.decorative-element.briefcase {
+  bottom: 15%;
+  left: 25%;
+  animation-delay: 5.5s;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(8px, -8px) rotate(5deg); }
+  50% { transform: translate(0, -15px) rotate(-3deg); }
+  75% { transform: translate(-8px, -8px) rotate(2deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@media (max-width: 768px) {
+  .decorative-element {
+    font-size: 60px;
+    opacity: 0.5;
+    width: 80px;
+    height: 80px;
+  }
+}
