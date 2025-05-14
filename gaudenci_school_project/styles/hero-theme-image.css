@@ -1,0 +1,21 @@
+/* Styles for theme-image-section to overlay background and stay below hero-content */
+.theme-image-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5; /* Between background (0) and hero-content (10) */
+    pointer-events: none; /* So it doesn't interfere with hero-content interactions */
+    padding: 3rem 1.5rem; /* Keep existing padding visually consistent */
+}
+
+.theme-image-section img {
+    width: 100%;
+    max-width: 96rem; /* max-w-6xl equivalent */
+    margin: 0 auto;
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    display: block;
+    pointer-events: auto; /* Allow interaction with the image if needed */
+}
